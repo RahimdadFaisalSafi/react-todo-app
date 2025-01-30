@@ -1,16 +1,15 @@
 import { useState } from "react";
 
 const TodoForm = ({ onAddTodo }) => {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const trimmedInput = input.trim();
-    if(!trimmedInput)
-        return;
-    onAddTodo(trimmedInput)
-    setInput('')
-  }
+    if (!trimmedInput) return;
+    onAddTodo(trimmedInput);
+    setInput("");
+  };
 
   return (
     <div>
@@ -18,7 +17,7 @@ const TodoForm = ({ onAddTodo }) => {
         type="text"
         placeholder="Add new Todo"
         value={input}
-        onChange={(e) => setInpute(e.target.value)}
+        onChange={(e) => setInput(e.target.value)}
       />
 
       <button onClick={handleSubmit}>Save</button>

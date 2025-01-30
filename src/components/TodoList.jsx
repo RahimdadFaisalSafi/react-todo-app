@@ -1,5 +1,5 @@
 import TodoItem from "./TodoItem"
-const TodoList = ({todos, onToggle, onDelete, onEdite}) => {
+const TodoList = ({todos, onToggle, onDelete, onEdit}) => {
     return (
         <ul>
             {
@@ -8,7 +8,7 @@ const TodoList = ({todos, onToggle, onDelete, onEdite}) => {
                     todo={todo}
                     onToggle={onToggle}
                     onDelete={onDelete}
-                    onEdit={onEdite}
+                    onEdit={onEdit}
                     />
                 ))
             }
