@@ -15,3 +15,4 @@ const TodoItem = ({ todo, onToggle, onDelete, onEdit }) => {
     </li>
   );
 };
+export default TodoItem
