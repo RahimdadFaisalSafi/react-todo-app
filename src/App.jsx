@@ -44,7 +44,7 @@ function App() {
           <TodoForm onAddTodo={addTodo} />
         </header>
 
-        <main className="bg-white p-4">
+        <main className="bg-white p-4 rounded-md mt-2">
 
       <TodoList
         todos={todos}
@@ -53,8 +53,6 @@ function App() {
         onEdit={editTodo}
       />
         </main>
-
-      
       </div>
     </div>
   );
